@@ -1,0 +1,29 @@
+<div class="container" fxLayout="row">
+    <mat-card>
+        <mat-card-title>Comments</mat-card-title>
+        <mat-card-content *ngFor="let comment of commentsArray">
+            <p>Name: {{ comment.name }}</p>
+            <p>E-mail: {{ comment.email }}</p>
+            <p>Body: {{ comment.body }}</p>
+            <hr>
+        </mat-card-content>
+    </mat-card>
+    <div class="form-container">
+        <p>New Comment</p>
+        <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>E-mail</mat-label>
+                <input matInput formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Body</mat-label>
+                <textarea matInput formControlName="body"></textarea>
+            </mat-form-field>
+            <button mat-button type="submit">Submit</button>
+        </form>
+    </div>
+</div>

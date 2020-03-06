@@ -1,0 +1,43 @@
+.container mat-accordion mat-expansion-panel {
+    position: relative;
+}
+
+.container mat-accordion mat-expansion-panel .view {
+    position: absolute;
+    bottom: 2px;
+    right: calc(50% - 52px);
+    width: 104px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #d3d3d3;
+}
+
+.container mat-accordion mat-expansion-panel .view:hover {
+    background-color: #a5a4a4;
+}
+
+.container mat-accordion mat-expansion-panel .wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container mat-accordion mat-expansion-panel .wrapper .delete-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container mat-accordion mat-expansion-panel .wrapper .wrapper-content-a {
+    margin-right: 10px;
+}
+
+.container .create {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 10px;
+    background-color: #d3d3d3;
+}
+
+.container .create:hover {
+    background-color: #a5a4a4;
+}
